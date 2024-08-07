@@ -83,7 +83,7 @@
 \f0\i0 \cf4 );\
 \
 \cf8 -- 4. Add new row to the products table\
-\cf2 insert into \cf4 products (\cf5 id\cf4 , \cf5 name\cf4 , \cf5 price\cf4 , \cf5 status\cf4 , \cf5 created_at\cf4 ) \cf2 values \cf4 (\cf6 1\cf4 ,\cf7 'Laptop'\cf4 , \cf6 1000\cf4 , \cf7 'valid'\cf4 ,
+\cf2 insert into \cf4 products (\cf5 id\cf4 , \cf5 name\cf4 , \cf5 price\cf4 , \cf5 status\cf4 , \cf5 created_at\cf4 ) \cf2 values \cf4 (\cf6 1\cf4 ,\cf7 \'92Nintendo Switch\'92\cf4 , \cf6 1000\cf4 , \cf7 'valid'\cf4 ,
 \f1\i \cf9 current_timestamp
 \f0\i0 \cf4 );\
 \
@@ -94,6 +94,6 @@
 \cf2 update \cf4 countries \cf2 set \cf5 name \cf4 = \cf7 'United States' \cf2 where \cf5 name \cf4 = \cf7 'Saudi Arabia'\cf4 ;\
 \
 \cf8 -- 7. Delete row from products table\
-\cf2 delete from \cf4 order_products \cf2 where \cf5 product_id \cf4 = (\cf2 select \cf5 id \cf2 from \cf4 products \cf2 where \cf5 name \cf4 = \cf7 'Laptop'\cf4 );\
-\cf2 delete from \cf4 products \cf2 where \cf5 name \cf4 = \cf7 'Laptop'\cf4 ;\
+\cf2 delete from \cf4 order_products \cf2 where \cf5 product_id \cf4 = (\cf2 select \cf5 id \cf2 from \cf4 products \cf2 where \cf5 name \cf4 = \cf7 'Nintendo Switch'\cf4 );\
+\cf2 delete from \cf4 products \cf2 where \cf5 name \cf4 = \cf7 'Nintendo Switch'\cf4 ;\
 }
